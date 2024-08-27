@@ -23,33 +23,36 @@
 
     <title>Portfolio-1</title>
     <link rel="stylesheet" href="./css/style.css">
+
+
+
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav__list">
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header class="header">
-        <nav class="navbar">
-            <ul class="nav__list">
-                <li>
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
         <section class="hero">
             <div class="title">
@@ -146,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-projects">Mas proyectos</a>
+        <a href="#" class="btn__primary btn__projects">Mas proyectos</a>
     </div>
 </section>
 
@@ -177,7 +180,18 @@
 
 
 <section class="contact">
-    
+    <span class="section__title">Contact me</span>
+    <div class="form">
+        <form action="https://formspree.io/f/mqazlwre" method="post" class="form">
+            <div class="input__group">
+                <input type="text" placeholder="Nombre *" required>
+                <input type="email" placeholder="Email *" required>
+                <textarea name="message" id="message" placeholder="Deja tu mensaje!" ></textarea>
+                <button type="submit" class="btn__primary btn__form">Enviar</button>
+            </div>
+        </form>
+    </div>
+
 </section>
 
 

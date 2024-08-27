@@ -1,0 +1,18 @@
+@mixin estilo-contenedor{
+    background: $color-hover;
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    color: rgb(205, 205, 205);
+}
+
+
+@mixin contenedor-projectos{
+            border-radius: 13px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(5.8px);
+            border: 1px solid rgba(255, 255, 255, 0.61);
+}

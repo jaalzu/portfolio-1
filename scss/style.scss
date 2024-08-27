@@ -1,18 +1,28 @@
 @import 'variables';
 @import 'buttons';
+@import 'mixins';
 @import '../scss/sections/header/header';
-@import '../scss/sections/header/navbar';
+@import '../scss/navbar';
 @import '../scss/sections/header/hero';
 @import '../scss/sections/projects/projects';
 @import '../scss/sections/about/about';
+@import '../scss/sections/contact/contact';
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 body{
@@ -35,12 +45,17 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
     margin-bottom: 4rem;
     font-family: $font-family-secondary;
     font-size: 3rem;
-    // color: rgb(232, 232, 232);
     color: rgba(245, 237, 20, 0.863);
 }
+
+
+
+  
+  
 
 .bxl-html5{
     color: #E34F26;

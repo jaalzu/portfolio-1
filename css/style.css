@@ -7,10 +7,17 @@
   z-index: 10000;
 }
 .button__groups .btn-header {
-  background-color: rgb(239, 239, 239);
-  color: black;
+  background: rgba(255, 255, 255, 0.196);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  color: rgb(205, 205, 205);
+  background: transparent;
   width: 90px;
-  height: 30px;
+  padding: 0.1rem 0;
+  gap: 0.4rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -18,10 +25,10 @@
   font-family: "Nunito", sans-serif;
   margin-inline: 0.3rem;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .button__groups .btn-header:hover {
-  background-color: rgba(245, 237, 20, 0.863);
-  color: black;
+  background: rgba(255, 255, 255, 0.196);
 }
 
 .work {
@@ -29,35 +36,52 @@
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
+  cursor: pointer;
 }
 .work a {
-  color: rgb(220, 220, 220);
+  color: rgb(205, 205, 205);
   text-decoration: underline;
   margin-left: 0.3rem;
 }
 .work a:hover {
-  color: white;
+  color: rgb(243, 243, 243);
 }
 
-.btn-projects {
+.btn__primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5rem 3rem;
+  background: rgba(255, 255, 255, 0.196);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  color: rgb(205, 205, 205);
+  background-color: transparent;
+  color: rgb(243, 243, 243);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn__primary:hover {
+  background: rgba(255, 255, 255, 0.196);
+}
+
+.btn__projects {
   grid-column: span 2;
   margin: 0 auto;
-  font-family: "Nunito", sans-serif;
-  color: white;
-  padding: 0.5rem 3rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(9.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.61);
-  transition: 0.3s ease;
 }
-.btn-projects:hover {
-  background: rgba(255, 255, 255, 0.16);
+
+.btn__form {
+  width: 25%;
+  align-self: flex-end;
+  background: transparent;
 }
 
 header {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
 }
 
@@ -109,7 +133,7 @@ header {
   margin-top: 9rem;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas: una para el h1 y otra para el p */
-  color: #fff;
+  color: rgb(243, 243, 243);
   z-index: 10;
 }
 .hero .title h1 {
@@ -127,6 +151,7 @@ header {
   color: rgba(245, 237, 20, 0.863);
 }
 .hero .title p {
+  color: rgb(205, 205, 205);
   font-size: 0.7rem;
   font-family: "Nunito", sans-serif;
   display: block;
@@ -184,7 +209,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  color: white;
+  color: rgb(243, 243, 243);
   width: 100%;
   margin-left: 1rem;
 }
@@ -194,11 +219,10 @@ header {
   margin-block: 0.5rem;
 }
 .projects .projects__grid .project__box .box__description .project__link {
-  color: rgb(226, 226, 226);
+  color: rgb(205, 205, 205);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  transition: color 0.4s ease;
 }
 .projects .projects__grid .project__box .box__description .project__link svg {
   margin-left: 3px;
@@ -216,15 +240,19 @@ header {
 
 .about {
   height: 100%;
-  margin-inline: 10rem;
+  margin-inline: 20%;
   margin-top: 4rem;
 }
 .about .about__grid {
-  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 13px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 15rem;
-  height: auto;
+  column-gap: 6rem;
 }
 .about .about__grid .about__description {
   width: 100%;
@@ -240,34 +268,75 @@ header {
 }
 .about .about__grid .about__img {
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .about .about__grid .about__img img {
   border-radius: 2%;
 }
 .about .tech-slider {
-  margin-top: 1rem;
-  background: rgba(255, 255, 255, 0.054);
-  border-radius: 6px;
+  border-radius: 13px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.9px);
-  -webkit-backdrop-filter: blur(8.9px);
-  border: 1px solid rgba(255, 255, 255, 0.52);
-  color: white;
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  border-radius: 6px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 45px;
   white-space: nowrap;
+}
+
+.contact {
+  padding-bottom: 3rem;
+  width: 100%;
+  padding-top: 6rem;
+}
+.contact .form form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact .form form .input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact .form form .input__group input, .contact .form form .input__group textarea {
+  font-family: "Nunito", sans-serif;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #9C9C9C;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
+  width: 700px;
+  color: rgb(205, 205, 205);
+}
+.contact .form form .input__group input::placeholder, .contact .form form .input__group textarea::placeholder {
+  color: rgb(205, 205, 205);
+}
+.contact .form form .input__group input:focus::placeholder, .contact .form form .input__group textarea:focus::placeholder {
+  color: rgba(245, 237, 20, 0.863);
+}
+.contact .form form textarea {
+  resize: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  outline: none;
 }
 
 body {
@@ -290,6 +359,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
   margin-bottom: 4rem;
   font-family: "Crimson Text", serif;
   font-size: 3rem;

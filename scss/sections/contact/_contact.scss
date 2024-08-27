@@ -1,0 +1,53 @@
+.contact{
+    padding-bottom: 3rem;
+    width: 100%;
+    padding-top: 6rem;
+    
+    .form{
+        form{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+
+            .input__group{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                
+                input,textarea{
+                    font-family: $font-family-primary;
+                    border: none;
+                    background: transparent;
+                    border-bottom: 1px solid #9C9C9C;
+                    padding-bottom: .5rem;
+                    padding-left: .3rem;
+                    width: 700px;
+                    color: $color-p;
+
+                    &::placeholder{
+                        color:$color-p;
+                    }
+
+                    &:focus::placeholder{
+                        color: $color-yellow;
+                    }
+                    
+                }
+
+
+
+               
+
+               
+
+                  
+            }
+
+            textarea{
+                resize: none;
+                    }
+             }
+        }
+        
+}

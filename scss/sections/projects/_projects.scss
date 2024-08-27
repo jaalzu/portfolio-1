@@ -13,11 +13,7 @@
 
 
         .project__box{
-            border-radius: 13px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(9.8px);
-            -webkit-backdrop-filter: blur(5.8px);
-            border: 1px solid rgba(255, 255, 255, 0.61);
+           @include contenedor-projectos;
             display: flex;
             max-width: 650px;
             padding: .5rem;
@@ -25,11 +21,9 @@
             
 
             .project__img{
-                // background-image: url(/images/Captura\ de\ pantalla\ \(222\).png);
-                // background-repeat: no-repeat;
-                // background-position: center;
-                // background-size: contain;
                 width: 50%;
+
+                
                 img{
                     object-fit: cover;
                     border-radius: 5px;
@@ -42,7 +36,7 @@
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                color: white;
+                color: $color-white-strong;
                 width: 100%;
                 margin-left: 1rem;
 
@@ -53,12 +47,10 @@
                 }
 
                 .project__link {
-                    color: rgb(226, 226, 226);
+                    color: $color-p;
                     text-decoration: none;
                     display: inline-flex;
                     align-items: center;
-                    transition: color .4s ease;
-                    
 
                     svg{
                         margin-left: 3px;
