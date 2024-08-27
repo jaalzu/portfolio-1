@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 1%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    z-index: 10000;
+    padding-block: 2.5rem;
+
+        ul{ 
+            padding-inline: 1.8rem;
+            display: flex;
+            gap: 1.1rem;
+            font-family: $font-family-primary;
+            background: rgba(255, 255, 255, 0.054);
+            border-radius: 13px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.9px);
+            -webkit-backdrop-filter: blur(8.9px);
+            border: 1px solid rgba(255, 255, 255, 0.52);
+            padding-block: .3rem;
+            backdrop-filter: blur(100px);
+
+
+            li a{
+                cursor: pointer;
+                color: rgb(216, 216, 216);
+                font-size: .950rem;
+                font-weight: 400;
+            }
+        }
+}

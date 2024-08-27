@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'buttons';
+@import '../scss/sections/header/header';
+@import '../scss/sections/header/navbar';
+@import '../scss/sections/header/hero';
+@import '../scss/sections/projects/projects';
+@import '../scss/sections/about/about';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(8, 5, 54);
+    background-image: url(/images/milad-fakurian-CWcVHTxP0IM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    cursor: pointer;
+}
+
+i{
+    font-size: 1.7rem;
+}
+
+.section__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-family: $font-family-secondary;
+    font-size: 3rem;
+    // color: rgb(232, 232, 232);
+    color: rgba(245, 237, 20, 0.863);
+}
+
+.bxl-html5{
+    color: #E34F26;
+}
+
+.bxl-css3{
+    color: #1572B6;
+}
+
+.bxl-javascript{
+color:#F7DF1E ;
+}
+
+.bxl-sass{
+color: #c69;
+}
+
+.bxl-react{
+    color: #61DAFB;
+}
+
+.bxl-nodejs{
+    color: #8CC84B;
+}
+
+.bxl-github{
+    color: #F05032;
+}
