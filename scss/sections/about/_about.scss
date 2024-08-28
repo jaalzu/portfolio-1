@@ -1,28 +1,29 @@
 .about{
     height: 100%;
-    margin-inline: 20%;
+    margin-inline: 15%;
     margin-top: 4rem;
 
     
     .about__grid{
         width: 100%;
-        @include contenedor-projectos;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 6rem;
+        column-gap: 10rem;
       
         
         .about__description{
-            width: 100%;
-            padding-left: 1.5rem;
+            width: 90%;
+        @include contenedor-projectos;
+            padding-left: 2rem;
 
-                p{
-                    font-size: 1.5rem;
+            p{
+                    font-size: 1.4rem;
                     font-family: $font-family-secondary;
                     color: $color-p;
                     text-transform: uppercase;
                     line-height: 1.8;
                     margin-top: 1rem;
+                    max-width: 80%;
                 }
             }
 
@@ -43,7 +44,7 @@
 .tech-slider {
     @include contenedor-projectos;
     border-radius: 6px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
