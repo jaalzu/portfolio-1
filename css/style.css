@@ -252,48 +252,42 @@ header {
     width: 80%;
   }
 }
-@media (min-width: 550px) and (max-width: 779px) {
+@media screen and (max-width: 779px) {
   .hero .title {
-    margin-top: 8rem;
     grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
   }
   .hero .title h1 {
-    padding-left: 0;
+    padding-left: 0rem;
   }
   .hero .title span {
     transform: translateX(0px);
   }
   .hero .title p {
-    margin-top: 2rem;
-    width: 100%;
-    padding-inline: 10rem;
-    transform: translateX(0px);
-    text-align: start;
+    transform: translateX(0);
+    margin-top: 4rem;
+    margin-inline: 3rem;
   }
   .hero .work__link {
     display: flex;
     justify-content: center;
   }
 }
+@media screen and (min-width: 550px) {
+  .hero .title {
+    margin-top: 6rem;
+  }
+}
 @media (min-width: 390px) and (max-width: 549px) {
   .hero .title {
-    width: 100%;
     margin-top: 6rem;
-    grid-template-columns: 1fr;
   }
   .hero .title h1 {
-    text-align: center;
-    padding-left: 0;
     margin-inline: 0.5rem;
-  }
-  .hero .title span {
-    transform: translateX(0px);
   }
   .hero .title p {
     margin-top: 2.5rem;
-    transform: translateX(0px);
     width: 100%;
     padding-inline: 2rem;
   }
