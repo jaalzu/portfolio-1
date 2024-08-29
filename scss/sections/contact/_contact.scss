@@ -32,22 +32,76 @@
                     &:focus::placeholder{
                         color: $color-yellow;
                     }
-                    
                 }
-
-
-
-               
-
-               
-
-                  
             }
 
             textarea{
                 resize: none;
                     }
+
              }
         }
-        
+}
+
+
+@media screen and (max-width:1010px){
+    .contact{
+        .form{
+            form{
+                .input__group{
+                    input,textarea{
+                        width: 580px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .contact{
+        margin-left: 1rem;
+        .form{
+            form{
+                .input__group{
+                    input,textarea{
+                        width: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .contact{
+        margin-left: 1.8rem;
+        .form{
+            form{
+                .input__group{
+                    input,textarea{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:299px){
+    .contact{
+        margin-left: 2.3rem;
+        .form{
+            form{
+                .input__group{
+                    input,textarea{
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
 }

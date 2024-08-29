@@ -521,6 +521,35 @@ header {
   resize: none;
 }
 
+@media screen and (max-width: 1010px) {
+  .contact .form form .input__group input, .contact .form form .input__group textarea {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact {
+    margin-left: 1rem;
+  }
+  .contact .form form .input__group input, .contact .form form .input__group textarea {
+    width: 440px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact {
+    margin-left: 1.8rem;
+  }
+  .contact .form form .input__group input, .contact .form form .input__group textarea {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 299px) {
+  .contact {
+    margin-left: 2.3rem;
+  }
+  .contact .form form .input__group input, .contact .form form .input__group textarea {
+    width: 270px;
+  }
+}
 *,
 *::before,
 *::after {
