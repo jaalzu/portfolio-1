@@ -320,7 +320,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 3rem;
+  gap: 3rem;
   max-height: 100%;
 }
 .projects .projects__grid .project__box {
@@ -381,6 +381,42 @@ header {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1400px) {
+  .projects {
+    margin-inline: 5rem;
+  }
+  .projects .projects__grid {
+    gap: 4rem;
+  }
+  .projects .projects__grid .project__box .box__description h2 {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .projects .projects__grid .project__box .box__description ul {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .projects {
+    padding-top: 2rem;
+    margin-inline: 3rem;
+  }
+  .projects .projects__grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .projects__grid .project__box .box__description h2 {
+    font-size: 1.3rem;
+  }
+  .projects .projects__grid .project__box .box__description .box__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .projects .projects__grid .project__box .box__description .box__list li i {
+    font-size: 1.7rem;
+  }
+}
 .about {
   height: 100%;
   margin-inline: 15%;
@@ -536,7 +572,7 @@ header {
 }
 @media screen and (max-width: 450px) {
   .contact {
-    margin-left: 1.8rem;
+    margin-left: 0.5rem;
   }
   .contact .form form .input__group input, .contact .form form .input__group textarea {
     width: 300px;
@@ -544,7 +580,7 @@ header {
 }
 @media screen and (max-width: 299px) {
   .contact {
-    margin-left: 2.3rem;
+    margin-left: 2rem;
   }
   .contact .form form .input__group input, .contact .form form .input__group textarea {
     width: 270px;
