@@ -400,6 +400,7 @@ header {
   -webkit-backdrop-filter: blur(5.8px);
   border: 1px solid rgba(255, 255, 255, 0.61);
   padding-left: 2rem;
+  padding-bottom: 1rem;
 }
 .about .about__grid .about__description p {
   font-size: 1.4rem;
@@ -432,6 +433,58 @@ header {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 1450px) {
+  .about {
+    margin-inline: 5%;
+  }
+  .about .about__grid {
+    column-gap: 4rem;
+  }
+  .about .about__grid .about__description {
+    width: 90%;
+  }
+  .about .about__grid .about__description p {
+    line-height: 1.7;
+  }
+}
+@media screen and (max-width: 970px) {
+  .about .about__grid {
+    column-gap: 3rem;
+  }
+  .about .about__grid .about__description {
+    width: 100%;
+  }
+  .about .about__grid .about__description p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 732px) {
+  .about .about__grid {
+    column-gap: 1rem;
+  }
+  .about .about__grid .about__description {
+    padding-left: 1rem;
+    padding-bottom: 0;
+    padding-right: 0.5rem;
+  }
+  .about .about__grid .about__description p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 598px) {
+  .about .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about .about__grid .about__description {
+    order: 2;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .about .about__grid .about__img {
+    text-align: center;
+  }
+}
 .contact {
   padding-bottom: 3rem;
   width: 100%;
