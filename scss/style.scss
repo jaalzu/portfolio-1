@@ -33,6 +33,9 @@ body{
     background-size: cover;
 }
 
+
+
+
 a{
     cursor: pointer;
 }
@@ -40,6 +43,12 @@ a{
 i{
     font-size: 1.7rem;
 }
+
+@media (min-width: 550px) and (max-width: 779px){
+   i{
+    font-size: 1.3rem;
+   }
+    }
 
 .section__title{
     display: flex;
