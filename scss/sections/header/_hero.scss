@@ -14,23 +14,24 @@
             grid-template-columns: 1fr 1fr; /* Dos columnas: una para el h1 y otra para el p */
             color: $color-white-strong;
             z-index: 10;
-
+            
             h1{
-                font-size:clamp(4.3rem,8vw,9rem);
+                position: relative;
+                font-size:clamp(3.8rem,8vw,9rem);
                 line-height: .9;
                 padding-left: 15rem;
                 font-family: $font-family-secondary;
                 font-weight: 300;
-
+                
             }
-
+            
             span{
-
-                display: inline-flex;
+                display: inline-block;
                 transform: translateX(-120px);
                 font-family: $font-family-primary;
                 font-weight: 500;
                 color: $color-yellow;
+                position: relative;
 
             }
 
@@ -39,12 +40,18 @@
                 color: $color-p;
                 font-size: .7rem;
                 font-family: $font-family-primary;
-                display: block;
-                margin-top: 9rem;
-                transform: translateX(-80px);
-                width: 80%;
+                // display: block;
+                // margin-top: 9rem;
+                // top: 50%;
+                // left: 100%;
+                // transform: translate(-100%, 50%);
+                // // transform: translateX(-80px);
+                // width: 80%;
                 text-transform: uppercase;
-                
+                width: 70%;
+                position: relative;
+                top: 10rem;
+                right: 100px;
             }
         }
 
@@ -73,9 +80,9 @@
     .hero{
         .title{
             p{
-                margin-top: 7rem;
+                top: 7rem;
                 width: 90%;
-                font-size: .6rem;
+                font-size: .630rem;
             }
         }
     }
@@ -85,10 +92,10 @@
     .hero{
         .title{
             width: 90%;
-            p{
-                margin-top: 6rem;
+            p{  
+                margin-top: -4rem;
                 width: 100%;
-                font-size: .6rem;
+                font-size: .640rem;
             }
         }
     }
@@ -100,8 +107,8 @@
         height: 100%;
         .title{
             width: 100%;
-            p{
-                margin-top: 4.5rem;
+            p{  
+                margin-top: -5.7rem;
                 width: 100%;
                 font-size: .6rem;
             }
@@ -120,7 +127,7 @@
 .hero{
     .title{
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 80%;
         text-align: center;
 
         h1{
@@ -132,9 +139,12 @@
         }
 
         p{
-            transform: translateX(0);
-            margin-top: 4rem;
-            margin-inline: 3rem;
+            margin-top: 1.5rem;
+            padding-inline: 3rem;
+            text-align: initial;
+            width: 100%;
+            top: 0;
+            right: 0;
         }
     }
 
@@ -149,8 +159,16 @@
 @media screen and (min-width:550px){
     .hero{
         .title{
-            margin-top: 6rem;
+            margin-top: 7rem;
         }
+
+        .button__groups{
+            width: 80%;
+            margin-top: 3rem;
+        }
+
+        
+        
     }
 }
 
@@ -159,6 +177,8 @@
 @media (min-width: 390px) and (max-width: 549px){
     .hero{
         .title{
+        width: 100%;
+
             margin-top: 6rem;
 
 
@@ -176,21 +196,26 @@
                 padding-inline: 2rem;
             }
         }
-
+        .button__groups{
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
         
     }
 }
 
 
-@media (min-width: 250px) and (max-width: 349px){
+@media (min-width: 250px) and (max-width: 389px){
 .hero{
     .title{
         grid-template-columns: 1fr;
+        width: 100%;
 
         h1{
             text-align: center;
             padding-left: 0;
-            margin-inline: .5rem;
 
         }
 
@@ -202,7 +227,22 @@
             margin-top: 2rem;
             transform: translateX(0);
             padding-inline: 0;
+            margin-left: .8rem;
+            font-size: .6rem;
         }
     }
+
+    .button__groups{
+        margin-top: 5rem;
+        display: flex;
+        gap: 3rem;
+
+       .links__groups{
+            gap: 1rem;
+            display: flex;
+        }
+    }
+
+   
 }
 }
