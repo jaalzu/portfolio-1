@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Questrial", sans-serif;
   margin-inline: 0.3rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -33,7 +33,7 @@
 
 .work {
   color: rgb(205, 205, 205);
-  font-family: "Nunito", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   cursor: pointer;
@@ -73,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Questrial", sans-serif;
   padding: 0.5rem 3rem;
   background: rgba(255, 255, 255, 0.196);
   border-radius: 6px;
@@ -117,14 +117,14 @@ header {
   left: 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   z-index: 10000;
   padding-block: 2.5rem;
 }
 .navbar ul {
   display: flex;
   gap: 0.5rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Questrial", sans-serif;
   border-radius: 13px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
@@ -167,11 +167,12 @@ header {
 
 .hero {
   display: flex;
-  height: 70%;
+  height: 80%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  padding-top: 2rem;
 }
 .hero .title {
   width: 80%;
@@ -186,21 +187,21 @@ header {
   font-size: clamp(3.8rem, 8vw, 9rem);
   line-height: 0.9;
   padding-left: 15rem;
-  font-family: "Crimson Text", serif;
-  font-weight: 300;
+  font-family: "Petrona", serif;
+  font-weight: 400;
 }
 .hero .title span {
   display: inline-block;
   transform: translateX(-120px);
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
   color: rgba(245, 237, 20, 0.863);
   position: relative;
 }
 .hero .title p {
   color: rgb(205, 205, 205);
-  font-size: 0.7rem;
-  font-family: "Nunito", sans-serif;
+  font-size: 0.71rem;
+  font-family: "Petrona", serif;
   text-transform: uppercase;
   width: 70%;
   position: relative;
@@ -339,9 +340,8 @@ header {
 }
 .projects {
   height: 100%;
+  margin-top: 2rem;
   margin-inline: 9rem;
-  padding-bottom: 3rem;
-  padding-top: 4rem;
 }
 .projects .projects__grid {
   display: grid;
@@ -360,7 +360,7 @@ header {
   flex-direction: column;
   max-width: 650px;
   max-height: 570px;
-  padding-bottom: 0.7rem;
+  padding-bottom: 1rem;
 }
 .projects .projects__grid .project__box .project__img {
   width: 100%;
@@ -374,7 +374,6 @@ header {
   border-top-right-radius: 13px;
 }
 .projects .projects__grid .project__box .box__description {
-  font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -385,12 +384,14 @@ header {
   font-size: 1.3rem;
   display: flex;
   margin-block: 0.5rem;
+  font-family: "Questrial", sans-serif;
 }
 .projects .projects__grid .project__box .box__description .project__link {
   color: rgb(205, 205, 205);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  font-family: "Petrona", serif;
 }
 .projects .projects__grid .project__box .box__description .project__link svg {
   margin-left: 3px;
@@ -403,7 +404,7 @@ header {
 .projects .projects__grid .project__box .box__description ul {
   display: flex;
   gap: 0.7rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-right: 1rem;
   justify-content: flex-end;
 }
@@ -447,7 +448,6 @@ header {
 .about {
   height: 100%;
   margin-inline: 15%;
-  margin-top: 4rem;
 }
 .about .about__grid {
   width: 100%;
@@ -467,7 +467,7 @@ header {
 }
 .about .about__grid .about__description p {
   font-size: 1.4rem;
-  font-family: "Crimson Text", serif;
+  font-family: "Petrona", serif;
   color: rgb(205, 205, 205);
   text-transform: uppercase;
   line-height: 1.8;
@@ -549,9 +549,7 @@ header {
   }
 }
 .contact {
-  padding-bottom: 3rem;
   width: 100%;
-  padding-top: 6rem;
 }
 .contact .form form {
   display: flex;
@@ -565,7 +563,7 @@ header {
   gap: 3rem;
 }
 .contact .form form .input__group input, .contact .form form .input__group textarea {
-  font-family: "Nunito", sans-serif;
+  font-family: "Questrial", sans-serif;
   border: none;
   background: transparent;
   border-bottom: 1px solid #9C9C9C;
@@ -630,7 +628,7 @@ header {
 
 body {
   background-color: rgb(8, 5, 54);
-  background-image: url(/images/milad-fakurian-CWcVHTxP0IM-unsplash.jpg);
+  background-image: url(../images/milad-fakurian-CWcVHTxP0IM-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -653,11 +651,14 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-  font-family: "Crimson Text", serif;
+  font-family: "Petrona", serif;
   font-size: 3rem;
   color: rgba(245, 237, 20, 0.863);
+  margin-bottom: 5rem;
+}
+
+section {
+  padding-block: 6rem;
 }
 
 .bxl-html5 {

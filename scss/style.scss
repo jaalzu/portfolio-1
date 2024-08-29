@@ -27,7 +27,7 @@
 
 body{
     background-color: rgb(8, 5, 54);
-    background-image: url(/images/milad-fakurian-CWcVHTxP0IM-unsplash.jpg);
+    background-image: url(../images/milad-fakurian-CWcVHTxP0IM-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,6 +40,7 @@ a{
     cursor: pointer;
 }
 
+
 i{
     font-size: 1.7rem;
 }
@@ -50,19 +51,22 @@ i{
    }
     }
 
+
+
 .section__title{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
     font-family: $font-family-secondary;
     font-size: 3rem;
     color: rgba(245, 237, 20, 0.863);
+    margin-bottom: 5rem;
 }
 
 
-
+section{
+    padding-block: 6rem;
+}
   
   
 
