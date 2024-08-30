@@ -556,21 +556,27 @@ header {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  gap: 1.5rem;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  width: min(85%, 700px);
 }
 .contact .form form .input__group {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
+  width: 100%;
 }
 .contact .form form .input__group input, .contact .form form .input__group textarea {
-  font-family: "Questrial", sans-serif;
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid #9C9C9C;
-  padding-bottom: 0.5rem;
-  padding-left: 0.3rem;
-  width: 700px;
+  padding: 0.75rem;
   color: rgb(205, 205, 205);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(107, 107, 107, 0.86);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 100%;
 }
 .contact .form form .input__group input::placeholder, .contact .form form .input__group textarea::placeholder {
   color: rgb(205, 205, 205);
@@ -582,35 +588,6 @@ header {
   resize: none;
 }
 
-@media screen and (max-width: 1010px) {
-  .contact .form form .input__group input, .contact .form form .input__group textarea {
-    width: 580px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .contact {
-    margin-left: 1rem;
-  }
-  .contact .form form .input__group input, .contact .form form .input__group textarea {
-    width: 440px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .contact {
-    margin-left: 0.5rem;
-  }
-  .contact .form form .input__group input, .contact .form form .input__group textarea {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 299px) {
-  .contact {
-    margin-left: 2rem;
-  }
-  .contact .form form .input__group input, .contact .form form .input__group textarea {
-    width: 270px;
-  }
-}
 *,
 *::before,
 *::after {
